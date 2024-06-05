@@ -1,0 +1,19 @@
+.about{
+    background-color: #252C33;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_text{
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 36px;
+    font-size: 20px;
+}
+
+.about_text h2{
+    font-size: 36px;
+}
