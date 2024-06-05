@@ -1,35 +1,77 @@
-.about{
-    background-color: #252C33;
-    padding: 40px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.about_text{
-    max-width: 50%;
+.navigation{
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    gap: 36px;
-    font-size: 20px;
+    align-items: center;
+    gap: 30px;
 }
 
-.about_text h2{
-    font-size: 36px;
+.title{
+    color: #000;
+    font-size: 72px;
 }
-@media screen and (max-width: 1024px){
-    .about img{
-        width: 45%;
-    }
+.empty{
+    color: red;
+    font-size: 100px;
+    padding: 236.2px 0;
+    text-align: center;
 }
-@media screen and (max-width: 768px) {
-    .about{
-        flex-direction: column;
+.cart{
+    background-color: darkblue;
+    padding: 40px;
+}
+
+.back img {
+    width: 60px;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    width: 600px;
+    margin: 16px auto;
+    align-items: center;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    margin-right: 16px;
+}
+
+.details {
+    flex: 1;
+}
+
+.name {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #000;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 18px;
+    color: #000;
+}
+
+.remove {
+    cursor: pointer;
+    color: red;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 620px) {
+    .card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 16px;
+        display: flex;
+        width: 400px;
+        margin: 16px auto;
         align-items: center;
-        text-align: center;
-        gap: 20px;
-    }
-    .about_text{
-        max-width: 100%;
     }
 }

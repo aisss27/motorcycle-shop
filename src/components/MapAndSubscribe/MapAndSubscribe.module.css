@@ -1,3 +1,102 @@
-.map{
+.map_subscribe{
     padding: 30px 40px;
+    display: flex;
+    color: #000;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000;
+}
+
+.map{
+    border-radius: 10px;
+    border: none;
+}
+
+.subscribe {
+    background-color: black;
+    box-shadow: 0 0 26px 1px #a1c3fe;
+    padding:10px 50px 50px 50px;
+    border-radius: 20px;
+    text-align: center;
+    width: 400px;
+    min-height: 380px;
+    height:auto;
+    color: #fff;
+}
+
+
+.subscribe img{
+    width: 100px;
+    height: 100px;
+}
+
+
+.subscribe h2 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size:27px;
+}
+
+.subscribe p {
+    letter-spacing: 0;
+    margin-top: 3px;
+    font-size: 16px;
+}
+
+.input  {
+    font-family: 'PT Sans', sans-serif;
+    background-color: transparent;
+    text-align: center;
+    width: 100%;
+    color: #445963;
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 30px;
+    margin-top: 18px;
+    font-size: 15px;
+    font-style: italic;
+    border-bottom: 2px solid #A1C3FE;
+}
+
+.button {
+    box-shadow: 0 0 26px 1px #a1c3fe;
+    padding: 12px 45px 12px 45px;
+    transition: 0.3s linear;
+    background: #40C4FF;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.button:hover{
+    cursor: pointer;
+    transform: translatey(-3px );
+    box-shadow: 0 0 6px #a1c3fe;
+}
+.button:active{
+    transform: translatey(3px );
+    box-shadow: 0 0 0 #a1c3fe;
+}
+
+@media screen and (max-width: 1024px) {
+    .map{
+        width: 500px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .map_subscribe{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .map{
+        width: 90%;
+    }
 }

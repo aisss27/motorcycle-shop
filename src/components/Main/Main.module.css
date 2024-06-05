@@ -1,0 +1,157 @@
+.header {
+    max-width: 1016px;
+    width: 100%;
+    padding: 54px 0 64px 64px;
+    display: flex;
+    gap: 304px;
+    align-items: center;
+}
+
+.logo{
+    font-size: 24px;
+    color: gold;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 80px;
+}
+
+.header nav ul {
+    list-style: none;
+}
+
+.header nav ul a {
+    text-decoration: none;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+
+.link{
+    border-radius: 20px;
+    padding: 20px 90px;
+    background: rgb(128, 128, 128);
+}
+
+.link:hover{
+    background: rgb(154, 152, 152);
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background-color: black;
+    background-image: url(../../assets/hero1.png), url(../../assets/hero2.png);
+    background-position: 0 164px, top right;
+    background-size: 80%, 700px 376px;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 96px;
+    width: 100%;
+    max-width: 700px;
+    padding: 0 64px;
+}
+
+.moto_characteristics {
+    font-family: 'DrunkWide', sans-serif;
+    position: absolute;
+    padding: 42px 8px 0 40px;
+    top: 376px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.moto_characteristics_card {
+    width: 306px;
+    height: 148px;
+    display: flex;
+}
+
+.characteristics_left {
+    width: 148px;
+    height: 30px;
+    transform: rotate(270deg);
+    color: #3f3e44;
+}
+
+.characteristics_right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transform: translateX(-40px);
+}
+
+.characteristics_right span {
+    font-size: 12px;
+}
+
+.characteristics_right span:nth-child(2) {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.browse_btn {
+    position: absolute;
+    bottom: 20px;
+    left: 60px;
+    letter-spacing: 10px;
+    padding: 30px 120px;
+    text-decoration: none;
+    font-size: 40px;
+    background-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(
+            #9a6a44 0%,
+            #fff4bc 28%,
+            #ab6516 53%,
+            #9c3e09 76%,
+            #e7d4a6 100%
+    )
+    1;
+}
+
+.browse_btn:hover {
+    background-color: rgb(128, 128, 128);
+    border: none;
+}
+
+
+@media screen and (max-width: 768px) {
+.header{
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+    .logo{
+       transform: scale(2);
+    }
+   .header nav ul a{
+       font-size: 24px;
+   }
+
+    h1{
+        font-size: 72px;
+        text-align: center;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        background: black;
+        align-items: center;
+    }
+    .moto_characteristics{
+        display: none;
+    }
+.browse_btn{
+    position: unset;
+    margin-top: 40px;
+}
+}

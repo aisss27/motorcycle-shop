@@ -1,110 +1,35 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.header {
-    max-width: 1016px;
-    width: 100%;
-    padding: 54px 0 64px 64px;
-    color: #fff;
+.about{
+    background-color: #252C33;
+    padding: 40px;
     display: flex;
-    gap: 104px;
+    justify-content: space-between;
 }
 
-.header nav ul {
+.about_text{
+    max-width: 50%;
     display: flex;
-    gap: 72px;
-    list-style: none;
-}
-.header nav ul a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.hero {
-    position: relative;
-    height: 100vh;
-    background-color: black;
-    background-image: url(../../assets/hero1.png), url(../../assets/hero2.png);
-    background-position: 0 164px, top right;
-    background-size: 80%, 700px 376px;
-    background-repeat: no-repeat;
-}
-
-h1 {
-    color: #fff;
-    font-size: 96px;
-    width: 100%;
-    max-width: 700px;
-    padding: 0 64px;
-}
-
-.moto_characteristics {
-    font-family: 'DrunkWide', sans-serif;
-    position: absolute;
-    padding: 42px 8px 0 40px;
-    top: 376px;
-    right: 0;
-    display: flex;
+    justify-content: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 36px;
+    font-size: 20px;
 }
 
-.moto_characteristics_card {
-    width: 306px;
-    height: 148px;
-    color: #fff;
-    display: flex;
+.about_text h2{
+    font-size: 36px;
 }
-
-.characteristics_left {
-    width: 148px;
-    height: 30px;
-    transform: rotate(270deg);
-    color: #3f3e44;
+@media screen and (max-width: 1024px){
+    .about img{
+        width: 45%;
+    }
 }
-
-.characteristics_right {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    transform: translateX(-40px);
-}
-
-.characteristics_right span {
-    font-size: 12px;
-}
-
-.characteristics_right span:nth-child(2) {
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.browse_btn {
-    position: absolute;
-    bottom: 20px;
-    left: 60px;
-    letter-spacing: 10px;
-    padding: 30px 120px;
-    text-decoration: none;
-    font-size: 40px;
-    background-color: transparent;
-    color: #fff;
-    border-width: 2px;
-    border-style: solid;
-    border-image: linear-gradient(
-            #9a6a44 0%,
-            #fff4bc 28%,
-            #ab6516 53%,
-            #9c3e09 76%,
-            #e7d4a6 100%
-    )
-    1;
-}
-
-.browse_btn:hover {
-    background-color: rgb(128, 128, 128);
-    border: none;
+@media screen and (max-width: 768px) {
+    .about{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .about_text{
+        max-width: 100%;
+    }
 }

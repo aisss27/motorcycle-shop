@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../MotorcycleList/MotorcycleList.module.css";
+import styles from "./MotorcycleList.module.css";
 
 const MotorcycleCard = ({
   id,
