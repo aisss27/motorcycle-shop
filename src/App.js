@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styled from "styled-components";
 import { Route, Routes, Navigate } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
@@ -7,11 +6,6 @@ import { MotorcycleList } from "./components/MotorcycleList/MotorcycleList";
 import { Login } from "./components/Login/Login";
 import { Cart } from "./components/Cart/Cart";
 import { CartProvider } from "./components/Cart/CartContext";
-
-const AppContainer = styled.div`
-  font-family: Arial, sans-serif;
-  color: #333;
-`;
 
 const routes = [
   {
@@ -37,7 +31,7 @@ function App() {
 
   return (
     <CartProvider>
-      <AppContainer>
+      <div>
         {isAuthenticated ? (
           <>
             <Routes>
@@ -55,7 +49,7 @@ function App() {
         ) : (
           <Login onLoginSuccess={handleLoginSuccess} />
         )}
-      </AppContainer>
+      </div>
     </CartProvider>
   );
 }
