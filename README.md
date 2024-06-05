@@ -1,4 +1,4 @@
-Можно скачать архивом или git clone https://github.com/aisss27/test_task_shop.git](https://github.com/aisss27/motorcycle-shop.git
+Можно скачать архивом или git clone https://github.com/aisss27/motorcycle-shop.git
 
 yarn - Установить зависимости
 
